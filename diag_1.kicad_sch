@@ -5,29 +5,34 @@
 	(uuid "6c5ad943-8c3c-47ff-ba44-cf54b377b7b7")
 	(paper "User" 433.807 302.311)
 	(lib_symbols
-		(symbol "diag-eagle-import:1N4148DO35-7"
+		(symbol "Device:D"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "D"
-				(at 2.54 0.4826 0)
+				(at 0 2.54 0)
 				(effects
 					(font
-						(size 1.778 1.5113)
+						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Value" ""
-				(at 2.54 -2.3114 0)
+			(property "Value" "D"
+				(at 0 -2.54 0)
 				(effects
 					(font
-						(size 1.778 1.5113)
+						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Footprint" "diag:DO35-7"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -36,7 +41,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -45,7 +50,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "DIODE\n\nhigh speed (Philips)"
+			(property "Description" "Diode"
 				(at 0 0 0)
 				(effects
 					(font
@@ -54,22 +59,50 @@
 					(hide yes)
 				)
 			)
-			(property "ki_locked" ""
+			(property "Sim.Device" "D"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
-			(symbol "1N4148DO35-7_1_0"
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_0_1"
 				(polyline
 					(pts
 						(xy -1.27 1.27) (xy -1.27 -1.27)
 					)
 					(stroke
 						(width 0.254)
-						(type solid)
+						(type default)
 					)
 					(fill
 						(type none)
@@ -77,11 +110,11 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy 1.27 0)
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
-						(type solid)
+						(type default)
 					)
 					(fill
 						(type none)
@@ -89,72 +122,50 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 1.27) (xy 1.27 0)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
-						(width 0.254)
-						(type solid)
+						(width 0)
+						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 1.27)
+			)
+			(symbol "D_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 				(pin passive line
-					(at -2.54 0 0)
+					(at 3.81 0 180)
 					(length 2.54)
 					(name "A"
 						(effects
 							(font
-								(size 0 0)
+								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "A"
+					(number "2"
 						(effects
 							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "C"
-						(effects
-							(font
-								(size 0 0)
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -11358,7 +11369,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 134.62) (xy 99.06 134.62)
+			(xy 73.66 134.62) (xy 78.74 134.62)
 		)
 		(stroke
 			(width 0.1524)
@@ -11445,16 +11456,6 @@
 			(type solid)
 		)
 		(uuid "a89d3d49-65e7-4179-a9d0-80159da75fbb")
-	)
-	(wire
-		(pts
-			(xy 66.04 134.62) (xy 30.48 134.62)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "a8cfae32-8a36-4e50-abc5-92c4bf7f1a15")
 	)
 	(bus
 		(pts
@@ -12425,6 +12426,16 @@
 			(type solid)
 		)
 		(uuid "e632e623-af6e-4504-a9d5-609dd92fc484")
+	)
+	(wire
+		(pts
+			(xy 63.5 134.62) (xy 30.48 134.62)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "e652d12f-195f-40a0-be64-4bfd0226581c")
 	)
 	(wire
 		(pts
@@ -13402,7 +13413,7 @@
 	)
 	(global_label "~{RESET_C}"
 		(shape bidirectional)
-		(at 81.28 134.62 0)
+		(at 78.74 134.62 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13412,7 +13423,7 @@
 		)
 		(uuid "0d824755-d31d-451e-a605-ee8b3843d1da")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 93.1175 134.62 0)
+			(at 90.5775 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15209,7 +15220,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "diag:0207_10"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
 			(at 378.46 137.16 0)
 			(effects
 				(font
@@ -15278,7 +15289,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "diag:0207_10"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
 			(at 50.8 198.12 0)
 			(effects
 				(font
@@ -15781,7 +15792,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "diag:0204_7"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
 			(at 73.66 116.84 0)
 			(effects
 				(font
@@ -16007,6 +16018,92 @@
 			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/498f4709-d0d2-49f7-b28c-fa2b7a9b8261"
 					(reference "#GND13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 67.31 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1ee57705-44e1-4469-aff2-c7e08ddfedba")
+		(property "Reference" "D1"
+			(at 67.31 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148WS"
+			(at 67.31 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 67.31 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 67.31 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 67.31 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 67.31 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "58b8c6c6-a637-497a-bb9e-b6f1d3675361")
+		)
+		(pin "2"
+			(uuid "f2cf6096-5507-4d7a-87f8-b20342c470b7")
+		)
+		(instances
+			(project "diag"
+				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/498f4709-d0d2-49f7-b28c-fa2b7a9b8261"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -17150,7 +17247,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "diag:0207_10"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
 			(at 129.54 45.72 0)
 			(effects
 				(font
@@ -17219,7 +17316,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "diag:0207_10"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
 			(at 119.38 45.72 0)
 			(effects
 				(font
@@ -18591,7 +18688,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "diag:0207_10"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
 			(at 137.16 109.22 0)
 			(effects
 				(font
@@ -18969,7 +19066,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "diag:0207_10"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
 			(at 129.54 109.22 0)
 			(effects
 				(font
@@ -19454,75 +19551,6 @@
 		)
 	)
 	(symbol
-		(lib_id "diag-eagle-import:1N4148DO35-7")
-		(at 68.58 134.62 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bb2d666b-9809-4208-b867-d4becca91bc0")
-		(property "Reference" "D1"
-			(at 66.04 135.1026 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "1N4148DO35-7"
-			(at 73.66 139.9286 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Footprint" "diag:DO35-7"
-			(at 68.58 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 68.58 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "C"
-			(uuid "49d4e6b6-f437-469c-a3af-bd1f5ac2b922")
-		)
-		(pin "A"
-			(uuid "2013c0a0-123e-4aac-bec9-7e10b160ba87")
-		)
-		(instances
-			(project "diag"
-				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/498f4709-d0d2-49f7-b28c-fa2b7a9b8261"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "diag-eagle-import:VCC")
 		(at 43.18 195.58 0)
 		(unit 1)
@@ -19972,7 +20000,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "diag:0207_10"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
 			(at 109.22 45.72 0)
 			(effects
 				(font
@@ -20107,7 +20135,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "diag:0207_10"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
 			(at 121.92 109.22 0)
 			(effects
 				(font
@@ -20632,7 +20660,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "diag:0207_10"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
 			(at 139.7 45.72 0)
 			(effects
 				(font
@@ -20824,7 +20852,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "diag:0207_10"
+		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
 			(at 129.54 226.06 0)
 			(effects
 				(font
