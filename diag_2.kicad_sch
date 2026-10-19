@@ -5,6 +5,141 @@
 	(uuid "abba822a-a5dd-4e59-a320-222abacf94ac")
 	(paper "User" 433.807 302.311)
 	(lib_symbols
+		(symbol "PCM_Voltage_Regulator_AKL:LT1963EST-3.3"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LT1963EST-3.3"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Package_TO_SOT_SMD_AKL:SOT-223-3_TabPin2"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/1963fc.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "SOT-223 3.3V 1.5A low dropout micropower voltage regulator, Alternate KiCad Library"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "3.3V 1.5A voltage regulator vreg pmic power supply 3-terminal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LT1963EST-3.3_0_0"
+				(rectangle
+					(start -5.08 1.27)
+					(end 5.08 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "GND"
+					(at 0 -2.54 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "LT1963EST-3.3_1_1"
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -6.35 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "diag-eagle-import:10-XX"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2128,199 +2263,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "diag-eagle-import:LT1963EST"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "IC"
-				(at -2.54 7.62 0)
-				(effects
-					(font
-						(size 1.778 1.5113)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" ""
-				(at 2.54 6.35 0)
-				(effects
-					(font
-						(size 1.778 1.5113)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "diag:SOT223"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "1.5A, Low Noise, Fast Transient Response LDO Regulator\n\nSource: http://www.linear.com/pc/downloadDocument.do?navId=H0,C3,P2222,D3148"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "LT1963EST_1_0"
-				(polyline
-					(pts
-						(xy -7.62 5.08) (xy 7.62 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -7.62 -2.54) (xy -7.62 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 5.08) (xy 7.62 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -2.54) (xy -7.62 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "GND"
-					(at -2.032 -1.524 0)
-					(effects
-						(font
-							(size 1.524 1.2954)
-						)
-						(justify left bottom)
-					)
-				)
-				(pin input line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "IN"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-				)
-			)
-			(symbol "LT1963EST_2_0"
-				(pin power_in line
-					(at 0 -2.54 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.524 1.524)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.524 1.524)
@@ -5356,6 +5298,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 218.44) (xy 40.64 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0393199b-ada4-4907-9d65-c4fc415fd686")
+	)
+	(wire
+		(pts
 			(xy 152.4 139.7) (xy 152.4 127)
 		)
 		(stroke
@@ -5866,16 +5818,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 218.44) (xy 60.96 218.44)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "4785869b-17dd-4066-ada2-aeb0dd5bd76d")
-	)
-	(wire
-		(pts
 			(xy 317.5 226.06) (xy 317.5 228.6)
 		)
 		(stroke
@@ -6336,16 +6278,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 228.6) (xy 48.26 226.06)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "7e86a7c5-2758-4a56-a060-1658f6712f99")
-	)
-	(wire
-		(pts
 			(xy 60.96 218.44) (xy 60.96 241.3)
 		)
 		(stroke
@@ -6573,6 +6505,16 @@
 			(type solid)
 		)
 		(uuid "99ccdff3-a3e2-4942-ab98-1eb4fab2b35f")
+	)
+	(wire
+		(pts
+			(xy 48.26 224.79) (xy 48.26 228.6)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "9ab4192e-3719-45c1-a912-6c2aaa46fe7f")
 	)
 	(wire
 		(pts
@@ -6993,6 +6935,16 @@
 			(type solid)
 		)
 		(uuid "cbdbe732-2580-4f56-8aca-de1e5b30255c")
+	)
+	(wire
+		(pts
+			(xy 55.88 218.44) (xy 60.96 218.44)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "cd0fa51e-acab-4991-9936-affeb81a807b")
 	)
 	(wire
 		(pts
@@ -9360,9 +9312,78 @@
 			(uuid "89f53df4-6cd7-4045-9dbc-7d3badde3dc0")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "#VCC9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "diag-eagle-import:C-EU025-025X050")
+		(at 111.76 251.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "080df7da-244a-4767-a347-409e76ff618b")
+		(property "Reference" "C8"
+			(at 113.284 251.079 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "0.01µf"
+			(at 113.284 256.159 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 111.76 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "23b9175f-86e0-4502-a29b-71ffee90cf30")
+		)
+		(pin "2"
+			(uuid "98c822b6-6f5b-405e-8ddf-ba29bfc884ec")
+		)
+		(instances
+			(project "diag"
+				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -9427,7 +9448,7 @@
 			(uuid "282da33f-6d06-44c3-aee4-8924b16416bd")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "P85")
 					(unit 1)
@@ -9462,7 +9483,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "diag:C025-025X050"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 81.28 251.46 0)
 			(effects
 				(font
@@ -9496,7 +9517,7 @@
 			(uuid "6634a2ff-c97f-4ac2-bdb4-e177967b8388")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "C4")
 					(unit 1)
@@ -9523,7 +9544,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "XC9572XL-TQ100"
+		(property "Value" "XC95144XL-TQ100"
 			(at 157.48 248.92 0)
 			(effects
 				(font
@@ -9861,7 +9882,7 @@
 			(uuid "1f50bb60-2124-4bcc-a85e-46cdc329b6a4")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "IC3")
 					(unit 3)
@@ -9933,7 +9954,7 @@
 			(uuid "b7fef6b6-226c-42f8-93b7-6b3ee48dbf41")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "REG1A0")
 					(unit 1)
@@ -10009,7 +10030,7 @@
 			(uuid "d3313ba4-c310-4313-8cb4-7008a5760c53")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "JP5")
 					(unit 1)
@@ -10085,7 +10106,7 @@
 			(uuid "4dca0dec-6226-4831-b9af-83585bfd7a02")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "S2")
 					(unit 1)
@@ -10163,7 +10184,7 @@
 			(uuid "1340baf9-de9a-4bb8-a42d-87ccbc1fcc58")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "RN5")
 					(unit 1)
@@ -10230,7 +10251,7 @@
 			(uuid "7546114f-3d96-4244-b117-182ed6c1a1f3")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "P80")
 					(unit 1)
@@ -10297,7 +10318,7 @@
 			(uuid "5d53235b-4e4a-4f3a-8cd2-555c176553d6")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "P2")
 					(unit 1)
@@ -10373,7 +10394,7 @@
 			(uuid "46d7108a-c4f9-469e-87db-77ae0113ebf7")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "S5")
 					(unit 1)
@@ -10440,7 +10461,7 @@
 			(uuid "7cc11436-0068-489a-9e51-af64e690b1bd")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "P7")
 					(unit 1)
@@ -10475,7 +10496,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "diag:C025-025X050"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 104.14 251.46 0)
 			(effects
 				(font
@@ -10509,9 +10530,78 @@
 			(uuid "949a25ca-e834-4e20-b59b-47d545ccf4eb")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "diag-eagle-import:C-EU025-025X050")
+		(at 127 251.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "59b6e501-d1a6-44b4-bd73-381da8cac45c")
+		(property "Reference" "C10"
+			(at 128.524 251.079 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "0.01µf"
+			(at 128.524 256.159 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 127 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 127 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "15933335-d1ce-45c2-9daa-0c76a6e89cfd")
+		)
+		(pin "2"
+			(uuid "9f435bf3-e16e-46ed-ad25-6fee02c3d6b5")
+		)
+		(instances
+			(project "diag"
+				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -10572,7 +10662,7 @@
 			)
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "#FRAME2")
 					(unit 1)
@@ -10642,7 +10732,7 @@
 			(uuid "5b539b0e-a96c-4c8f-9a16-0dbe4fbcbaa3")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "JP6")
 					(unit 1)
@@ -10709,7 +10799,7 @@
 			(uuid "c742dfcf-111f-47c6-99cf-9fa0446e3a06")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "P24")
 					(unit 1)
@@ -10776,7 +10866,7 @@
 			(uuid "9132ae4b-57ce-4ff6-a6d2-d9b0bcfe595d")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "P19")
 					(unit 1)
@@ -10845,7 +10935,7 @@
 			(uuid "67965b9c-5fc0-4358-8285-7dc1596eaefc")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "R12")
 					(unit 1)
@@ -10854,8 +10944,8 @@
 		)
 	)
 	(symbol
-		(lib_id "diag-eagle-import:LT1963EST")
-		(at 48.26 220.98 0)
+		(lib_id "PCM_Voltage_Regulator_AKL:LT1963EST-3.3")
+		(at 48.26 218.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10863,7 +10953,7 @@
 		(dnp no)
 		(uuid "7899c0db-2c0e-4ae8-baad-11ff56438a43")
 		(property "Reference" "REG1B0"
-			(at 40.64 214.63 0)
+			(at 40.64 212.09 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -10872,7 +10962,7 @@
 			)
 		)
 		(property "Value" "LT1963EST"
-			(at 50.8 214.63 0)
+			(at 50.8 212.09 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -10880,8 +10970,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "diag:SOT223"
-			(at 48.26 220.98 0)
+		(property "Footprint" "PCM_Package_TO_SOT_SMD_AKL:SOT-223-3_TabPin2"
+			(at 48.26 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10889,8 +10979,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 48.26 220.98 0)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/1963fc.pdf"
+			(at 48.26 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10898,17 +10988,14 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 48.26 220.98 0)
+		(property "Description" "SOT-223 3.3V 1.5A low dropout micropower voltage regulator, Alternate KiCad Library"
+			(at 48.26 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "4"
-			(uuid "3be5d5ec-64a6-495a-a07b-6c92c5749d17")
 		)
 		(pin "1"
 			(uuid "6a9b1756-e7e0-4f22-b121-6479a03fe077")
@@ -10920,7 +11007,7 @@
 			(uuid "1b6e10af-3e24-45fa-9f4f-b50e60908802")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "REG1B0")
 					(unit 1)
@@ -10986,7 +11073,7 @@
 			(uuid "b39217d6-6735-44da-bf8a-3078a3fb3ede")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "#GND17")
 					(unit 1)
@@ -11055,7 +11142,7 @@
 			(uuid "35cf729f-cdbc-4a5b-84d3-18aa2e3e8fc9")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "R13")
 					(unit 1)
@@ -11121,7 +11208,7 @@
 			(uuid "1bad76ab-bbbf-4c5c-bfb7-2f4481b9d0e1")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "#GND2")
 					(unit 1)
@@ -11197,9 +11284,78 @@
 			(uuid "6f29918f-a294-4936-9654-18c922316eac")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "S4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "diag-eagle-import:C-EU025-025X050")
+		(at 119.38 251.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a7463b52-3e69-48bf-9b4c-fc15e8a674ef")
+		(property "Reference" "C9"
+			(at 120.904 251.079 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "0.01µf"
+			(at 120.904 256.159 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 119.38 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0c5a3925-d4f0-400b-a7c9-a33436f8165f")
+		)
+		(pin "2"
+			(uuid "df432eed-b5af-4970-a856-211541a1ecac")
+		)
+		(instances
+			(project "diag"
+				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -11263,7 +11419,7 @@
 			(uuid "fa83ffb2-0515-4787-a5db-4e1c84c0ae47")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "#GND8")
 					(unit 1)
@@ -11289,7 +11445,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "XC9572XL-TQ100"
+		(property "Value" "XC95144XL-TQ100"
 			(at 119.38 93.98 0)
 			(effects
 				(font
@@ -11626,7 +11782,7 @@
 			(uuid "25126b16-a676-4895-bddc-d82dad67cae6")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "IC3")
 					(unit 2)
@@ -11693,7 +11849,7 @@
 			(uuid "01dc382f-5045-42b5-9169-acbf741e0be6")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "P29")
 					(unit 1)
@@ -11763,7 +11919,7 @@
 			(uuid "02ceb15c-a3b9-4e6e-85d0-adc817b9c378")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "JP7")
 					(unit 1)
@@ -11832,7 +11988,7 @@
 			(uuid "e577f533-83ff-42a6-8e04-ca5ed7869d0f")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "C3")
 					(unit 1)
@@ -11908,7 +12064,7 @@
 			(uuid "2b96fa62-a672-4d0d-a5a4-fe59c7a1239c")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "S3")
 					(unit 1)
@@ -11935,7 +12091,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "XC9572XL-TQ100"
+		(property "Value" "XC95144XL-TQ100"
 			(at 160.02 208.28 0)
 			(effects
 				(font
@@ -12273,7 +12429,7 @@
 			(uuid "8f112e63-a73c-4e3e-b353-8be1c54d8347")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "IC3")
 					(unit 1)
@@ -12339,7 +12495,7 @@
 			(uuid "9fd95aed-a2e3-4996-bfa5-54eec923823a")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "#GND19")
 					(unit 1)
@@ -12374,7 +12530,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "diag:C025-025X050"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 88.9 251.46 0)
 			(effects
 				(font
@@ -12408,7 +12564,7 @@
 			(uuid "8631c906-3376-41a3-a3a2-6af6f4687e90")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "C5")
 					(unit 1)
@@ -12489,7 +12645,7 @@
 			(uuid "847ccda0-a651-4e12-beb8-f13a32798b94")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "CN2")
 					(unit 1)
@@ -12524,7 +12680,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "diag:C025-025X050"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 96.52 251.46 0)
 			(effects
 				(font
@@ -12558,7 +12714,7 @@
 			(uuid "07e1a0d8-87fc-4d7b-8a72-287ad2aff95f")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "C6")
 					(unit 1)
@@ -12634,7 +12790,7 @@
 			(uuid "c7eeaa5b-059a-4487-a090-a3c27055cb4c")
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "S1")
 					(unit 1)
@@ -12697,7 +12853,7 @@
 			)
 		)
 		(instances
-			(project ""
+			(project "diag"
 				(path "/5591b95b-8e3f-4ee1-8f72-67906c158b98/15700adf-6a79-4be7-b3a0-4ae425ee2a51"
 					(reference "#FRAME2")
 					(unit 2)
